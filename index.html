@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Storage</title>
+
+</head>
+<body>
+
+    <label for="storageSelector">Válassz:</label>
+    <select id="storageSelector">
+
+
+        <option value="localStorage">Local Storage</option>
+        <option value="sessionStorage">Session Storage</option>
+    </select>
+
+    <br>
+
+    <label for="keyInput">Key:</label>
+    <input type="text" id="keyInput">
+
+    <label for="valueInput">Value:</label>
+    <input type="text" id="valueInput">
+
+    <button onclick="savedAdatok()">Mentés</button>
+    <button onclick="deletedAdatok()">Törlés</button>
+
+    <h2>Mentett adatok:</h2>
+    <div id="output"></div>
+    <script src="storage.js"></script>
+</body>
+</html>
